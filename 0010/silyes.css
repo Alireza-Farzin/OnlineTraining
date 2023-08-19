@@ -1,0 +1,364 @@
+@import url(rest.css);
+@font-face {
+    font-family: 'vazirNormal';
+    src: url('fonts/vazir.eot');
+    src: url('fonts/vazir.eot?#iefix') format('embedded-opentype'),
+     url('fonts/vazir.woff2') format('woff2'),
+     url('fonts/vazir.woff') format('woff'),
+     url('fonts/vazir.ttf') format('truetype');
+    font-weight: normal;
+    font-display: swap;
+}
+ body,input, button {
+    font-family: 'vazirNormal';
+}
+/* style jenrite */
+body{
+    direction: rtl;
+}
+*{
+    box-sizing: border-box;
+}
+.canters{
+    width: 1200px;
+    margin: auto;
+
+}
+.canters hr{
+    color: darkred;
+    font-weight: bolder;
+    margin-top:30px;
+}
+hr{
+    font-weight: bolder;
+    margin-top:20px;
+    width: 1200px;
+}
+/* hadere */
+#header{
+    color: white;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(13,44,98);
+    position: relative;
+}
+ #header .adderss{
+     padding: 10px 10px;
+ }
+ #header .adderss ul li {
+     display: inline-block;
+     padding-right: 40px;
+     cursor: pointer;
+ }
+ #header .adderss ul li a{
+     text-decoration: none;
+     color: white;
+ }
+ #header .adderss ul li svg{
+     padding-left:4px;
+     font-size:20px;
+ }
+ #header .adderss ul li :hover{
+     color: #ccc;
+ }
+ #header .uoser{
+    position: absolute;
+    top: 4px;
+    left: 50px;
+ }
+ #header .uoser ul li{
+    padding: 10px;
+    display: inline-block;
+ }
+ #header .uoser ul li a{
+     color: white;
+     text-decoration: none;
+ }
+ #header .uoser ul li a span{
+     padding: 4px 14px;
+     background-color: rgb(46,72,114);
+     border-radius:100px;
+     margin-right: 20px;
+ }
+ #header .uoser ul li a:hover{
+     color: #ccc;
+ }
+ /* nav */
+ #nav{
+     width:1100px;
+     height: 100px;
+     margin-top: 30px;
+     position: relative;
+ }
+ #nav .title{
+     float: right;
+ }
+ #nav .title h1{
+     font-size:30px;
+     font-weight: bold;
+     padding-right: 10px;
+     padding-top:23px;
+ }
+ #nav .navbar ul li {
+     display: inline-block;
+     position: relative;
+     top:30px;
+     right: 40px;
+ }
+ #nav .navbar ul li a{
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    padding-right: 20px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    transition: 0.25s;
+ }
+ #nav .navbar ul li a:hover{
+     border-bottom: 2px solid #000;
+ }
+ #nav form input {
+    position: absolute;
+    top: 16px;
+    left:20px;
+    width: 200px;
+    padding: 10px;
+ }
+ /* canter */
+ #canter{
+     padding-top: 30px ;
+ }
+ #canter .items .item {
+     display: inline-block;
+     background-color: rgb(244,245,245);
+     width:20%;
+     height: 40px;
+     padding: 10px;
+     margin: 5px 18px;
+     text-align: center;
+ }
+ #canter .items .item a{
+     text-decoration: none;
+     color: #000;
+
+ }
+ #canter .items .item a:hover{
+    /* box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%); */
+    color: rgb(119, 117, 117);
+ }
+ /* images */
+#images{
+    max-width: 100%;
+    height:450px;
+    background-image: url('images/pexels-andrea-piacquadio-3772511.jpg');
+    background-size:100% 100%;
+    margin-top:20px;
+}
+#images .titel{
+    text-align: center;
+   font-size: 60px;
+   font-weight: bold;
+   color: white;
+   padding-top:110px;
+   margin-right: 540px;
+}
+/* itemse */
+#itemse{
+    width: 100%;
+    margin-top: 50px;
+}
+#itemse  .titel h1{
+    float: right;
+    color: rgb(13,44,98);
+    font-size: 25px;
+}
+#itemse  .titel a{
+    text-decoration: none;
+    color: rgb(178, 178, 182);
+    position: relative;
+    top:10px;
+    right: 40px;
+}
+#itemse  .titel a:hover{
+    color: #ccc;
+}
+   
+#itemse .item{
+    width: 17%;
+    height: 170px;
+    margin: 10px;
+    padding: 7px 0;
+    background-color:rgb(246,246,246);
+    display: inline-block;
+    margin-top: 50px;
+    border-radius: 3px 3px 0px 0px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+#itemse .item:hover{
+    box-shadow: 0 5px 15px 0 rgb(0 0 0 / 20%);
+}
+#itemse .titel{
+    padding:5px 10px;
+}
+#itemse .item .images{
+    padding: 4px 0;
+}
+#itemse .item  img{
+    width: 203px;
+    height: 133px;
+    border-radius: 0 0 3px 3px;
+}
+/* pargarf */
+#pargarf{
+    width: 100%;
+    height: 350px;
+    background-color: rgb(13,44,98);
+    margin-top: 60px;
+    color: white;
+}
+#pargarf .title{
+    padding-right: 100px;
+    font-weight: bold;
+    font-size:20px;
+    padding: 42px 90px;
+}
+#pargarf .images{
+    float: right;
+    width: 20%;
+}
+#pargarf .images img{
+    width: 200px;
+    position: relative;
+    right:65px;
+}
+.pg p{
+    width: 80%;
+    line-height: 30px;
+    display: inline-block;
+    text-align: justify;
+    font-size:15px;
+    padding: 30px 31px;
+}
+/* items-2 */
+#items-2{
+    width: 100%;
+    height:530px;
+    margin-top: 50px;
+}
+#items-2 .tilte{
+    float: right;
+    color: rgb(13,44,98);
+    font-size:20px;
+    padding:15px 10px;
+}
+#items-2 .liste{
+    padding-top:18px;
+}
+#items-2 .liste a{
+    text-decoration: none;
+    color: rgb(119, 117, 117);
+}
+#items-2 .liste a:hover{
+    color: rgb(99, 97, 97);
+}
+#items-2 .items .item{
+    width: 20%;
+    height:400px;
+    display: inline-block;
+    margin: 28px;
+    border: 1px solid #ccc;
+}
+#items-2 .items .img img{
+    width: 99%;
+    height: 250px;
+    padding: 5px;
+}
+#items-2 .items .tilet{
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(119, 117, 117);
+}
+#items-2 .items .submit-btbn{
+    color: white;
+    background-color: rgb(13,44,98);
+    border: none;
+    border-radius: 5px;
+    margin: 40px 50px;
+    padding: 7px 10px;
+    cursor: pointer;
+}
+#items-2 .items .submit-btbn:hover{
+    background-color: rgb(12,44,120);
+}
+/* footer */
+#footer .items .item{
+    display: inline-block;
+    margin-top: 50px;
+    width: 29%;
+    height: 150px;
+    margin: 20px;
+}
+#footer .tilte{
+    font-size: 25px;
+    padding: 15px 10px;
+    border-bottom: 1px solid #ccc;
+}
+#footer .tilte span{
+    border-bottom: 1px solid red;
+}
+#footer p{
+    padding: 20px 10px;
+    text-align: justify;
+    color: rgb(119, 117, 117);
+    line-height: 30px;
+}
+.items1 ul li{
+    color: rgb(119, 117, 117);
+    padding-right:10px;
+    line-height: 35px;
+}
+.items1 svg{
+    color: rgb(13,44,98);
+    font-size: 15px;
+    margin-left: 10px;
+}
+.items2 ul li{
+    float: left;
+    margin: 20px 5px;
+}
+.items2 ul li a{
+    background-color: rgb(165, 165, 165);
+    padding: 5px 14px;
+    border-radius:100px;
+    transition: 0.25s;
+}
+.items2 ul li a:hover{
+    border: 1px solid red;
+}
+.item .logoe img{
+    width: 200px;
+    margin: 50px 100px;
+}
+.item1{
+    position: relative;
+    bottom: 109px;
+}
+.item2{
+    position: relative;
+    bottom: 145px;
+}
+.item3{
+    position: relative;
+    bottom: 10px;
+}
+#alireza{
+    background-color: rgb(12,44,120);
+    width: 100%;
+}
+#alireza p{
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    line-height: 30px;
+}
+
